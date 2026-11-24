@@ -14,7 +14,7 @@ static int hello_init(void)
 
 static void hello_exit(void)
 {
-	print
+	printk(KERN_ALERT "Goodbye, world %s\n");
 }
 
 module_init(hello_init);
