@@ -7,13 +7,14 @@ MODULE_LICENSE("Dual BSD/GPL");
 
 static int hello_init(void)
 {
-	printk(KERN_ALERT "Hello, world\n");
+    char* github_username = "TimBLukas";
+	printk(KERN_ALERT "Hello, world %s\n", github_username);
 	return 0;
 }
 
 static void hello_exit(void)
 {
-	printk(KERN_ALERT "Goodbye, cruel world\n");
+	print
 }
 
 module_init(hello_init);
